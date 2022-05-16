@@ -1,0 +1,9 @@
+"par o impar"
+//___________________________Algoritmo "par o impar"____________________________//
+escribir ("elige un número, te diré si es par o no")
+numero = leer()
+si(numero % 2 == 0)
+    escribir ("tu numero SI es par")
+    sino
+        escribir ("tu numero NO es par")
+fin

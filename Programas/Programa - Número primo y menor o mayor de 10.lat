@@ -1,0 +1,58 @@
+imprimir('Programa "Numeros primos y/o mayores de 10" ')
+imprimir("Ingrese un número:")
+//______________________________Variables__________________________________//
+numeroCad = acadena(leer())
+numeroDec = anumero(numeroCad)
+contadorDivisiones = 0 // cantidad de divisiones posibles del número
+
+mensajePrimoV = ("el número "..numeroCad.. " es primo " )
+mensajePrimoF = ("el número "..numeroCad.. " no es primo " )
+mensajeMayorDe10 =("y es mayor de 10" ) 
+mensajeMenorDe10 = ("y es menor de 10")
+//______________________________Funciones__________________________________//
+funcion primoMenor()
+    imprimir(mensajePrimoV..mensajeMenorDe10)fin
+
+funcion primoMayor()
+    imprimir (mensajePrimoV..mensajeMayorDe10)fin
+
+funcion noPrimoMenor() 
+    imprimir (mensajePrimoF..mensajeMenorDe10)fin
+
+funcion noPrimoMayor()
+    imprimir (mensajePrimoF..mensajeMayorDe10)fin
+
+
+funcion algoritmo()
+    limpiar()
+    desde (i = 1; i <= numeroDec; i++)
+        si (numeroDec % i  == 0)
+            contadorDivisiones++ fin
+        si (contadorDivisiones > 2) romper fin
+    fin
+    
+    si (numeroDec  == 1)
+        imprimir (mensajePrimoV..mensajeMenorDe10)fin
+    
+    si (numeroDec == 10)
+        imprimir (mensajePrimoF..mensajeMayorDe10)fin
+
+    si (contadorDivisiones == 2)  && (numeroDec < 10)
+        primoMenor()fin
+
+    si (contadorDivisiones == 2)  && (numeroDec > 10)
+        primoMayor()fin
+
+    si (contadorDivisiones > 2)  && (numeroDec < 10)
+    noPrimoMenor()fin
+
+    si (contadorDivisiones > 2)  && (numeroDec > 10)
+    noPrimoMayor()fin
+
+fin
+//______________________________Algoritmo_________________________________//
+
+si (cadena.es_numerico(numeroCad) == falso)
+    imprimir ("Por favor,reinicie y escriba un valor numérico válido.")
+sino
+    algoritmo()fin

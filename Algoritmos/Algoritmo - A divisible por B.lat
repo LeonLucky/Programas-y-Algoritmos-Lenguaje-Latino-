@@ -1,0 +1,12 @@
+//____________________variables y arranque________________//
+escribir("Ingresa el dividendo:")
+dividendo = leer()
+escribir("Ingresa el divisor: ")
+divisor = leer()
+resultado = dividendo / divisor
+//_______________________Algoritmo _______________________//
+si(dividendo % divisor == 0)
+    escribir("El resultado es " .. resultado .. " y SI es divisible ")
+    sino
+     escribir ("El resultado " .. resultado .. " no es entero y por lo tanto y NO es divisible ")
+fin

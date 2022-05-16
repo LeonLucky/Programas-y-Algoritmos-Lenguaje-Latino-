@@ -1,0 +1,55 @@
+imprimir("Escriba un numero A cuyos múltiplos va a desarrollar")
+//__________________________variables______________________________________//
+numeroA = acadena(leer())
+numeroDecA = anumero (numeroA)
+multiplicador = (numeroDecA)
+multiplo= 1
+//____________________________funciones____________________________________//
+funcion calculo()
+    limpiar()
+    imprimir ("Numero A: "..numeroDecA.. " (Múltiplo)")
+    imprimir ("Numero B: "..numeroDecB.. " (Límite)")
+    imprimir ("Numero C: "..numeroDecC.. " (Divisor)")
+    imprimir ("Múltiplos de A menores que B y no divisibles por C: ")
+    mientras (multiplo <= limite)
+        si (multiplo % multiplicador == 0) && (multiplo%divisible!= 0)
+            imprimir (multiplo)fin
+        multiplo++
+    fin
+
+
+fin
+
+
+funcion prosiga1()
+    imprimir ("Genial! ahora escriba el número que limite el valor de los múltiplos de A")
+    numeroB = acadena(leer())
+    numeroDecB = anumero (numeroB)
+    limite = (numeroDecB)
+    si cadena.es_numero(numeroB)==verdadero && (numeroDecA<numeroDecB)
+        prosiga2()
+    sino
+        imprimir ("Por favor, digite un VALOR NUMÉRICO B mayor que el número A")fin
+fin
+
+funcion prosiga2()
+    imprimir ("Ya casi! ahora escriba el número cuyos múltiplos van a ser eliminados")
+    numeroC = acadena(leer())
+    numeroDecC = anumero (numeroC)
+    divisible = (numeroDecC)
+    si cadena.es_numero(numeroC)==verdadero
+        calculo()
+        //imprimir ("under construction")
+sino
+    imprimir  ("Por favor, escriba un valor C numérico")fin
+
+fin
+
+
+
+//_____________________________algoritmo___________________________________//
+si cadena.es_numero(numeroA)==verdadero
+    prosiga1()
+sino
+    imprimir ("Por favor, digite un número válido y vuelva a intentarlo.")
+fin

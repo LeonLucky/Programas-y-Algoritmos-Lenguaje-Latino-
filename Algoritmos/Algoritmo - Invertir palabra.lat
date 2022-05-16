@@ -1,0 +1,13 @@
+//______________________________variables__________________________________//
+palabra=leer()
+i=0
+j= cadena.longitud(palabra)-1
+//______________________________algoritmo__________________________________//
+mientras (i < j)
+    aux = palabra [i]
+    palabra [i] = palabra [j]
+    palabra [j] = aux
+    i++
+    j--
+fin
+imprimir (palabra)

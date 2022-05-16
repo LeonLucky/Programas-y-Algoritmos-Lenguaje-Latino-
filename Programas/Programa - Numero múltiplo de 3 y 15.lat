@@ -1,0 +1,39 @@
+//____________________________________Variables_________________________________//
+mensaje3v = ("tu número es múltiplo de 3 ")/**/mensaje3f = ("tu número no es múltiplo de 3 ")
+
+mensaje15v= ("y también de 15")/**/mensaje15f= ("pero no de 15 ")/**/mensaje15f2=("ni tampoco de 15")
+//_____________________________________Inicio___________________________________//
+escribir ("Escribe un número y te diré si es múltiplo de 3 y 15") escribir("Ingresa el numero:")
+x = leer()
+numero = acadena(x) 
+
+//____________________________________Funciones_________________________________//
+funcion multiplo3v15v()
+    si(numero %  3 == 0) && (numero % 15 == 0)
+        escribir (mensaje3v..mensaje15v) fin
+fin
+funcion multiplo3f15f()
+    si(numero %  3 != 0) && (numero %  15 != 0)
+        escribir (mensaje3f..mensaje15f2) fin
+fin
+funcion multiplo3v15f()
+    si(numero %  3 == 0) && (numero % 15 != 0)
+        escribir (mensaje3v..mensaje15f)fin
+fin
+
+funcion algoritmo()
+    si(numero %  3 == 0) && (numero % 15 == 0)
+        multiplo3v15v()
+    osi(numero %  3 == 0) && (numero % 15 !=0)
+        multiplo3v15f()
+    osi(numero %  3 != 0) && (numero % 15 !=0)
+        multiplo3f15f()fin
+fin
+//__________________________________Algoritmo___________________________________//
+
+si (numero == 0)
+    escribir ("tu número no tiene valor")
+osi (cadena.es_numerico(numero) == falso)
+    escribir ("Por favor,reinicie y escriba un valor numérico válido")
+sino
+    algoritmo()fin

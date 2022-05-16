@@ -1,0 +1,20 @@
+//_________________Algoritmo "primer y último digito"_______________//
+escribir ("A continuación mostraremos el primer y el último dígito de un número que usted escriba") escribir("Ingrese un numero!")
+x = leer()
+numero = acadena(x)
+ultimoNumero = numero%10
+//_____________________________Funciones_________________________//
+funcion correcto()
+    escribir ("Listo!")
+    escribir ("Primer dígito: "..primerNumero)
+    escribir ("Último Dígito: "..ultimoNumero)
+fin
+//____________________________Algoritmo__________________________//
+si (cadena.es_numerico(numero) == falso)
+        escribir ("por favor, digite un número natural")
+sino
+    mientras (numero>0)
+        primerNumero = numero%10
+        numero=mate.trunc (numero/10)fin //!!!analizar este cálculo
+    correcto()
+    fin

@@ -1,0 +1,49 @@
+imprimir('Programa "Detección de valores" ')
+imprimir("Ingrese un valor alfanumérico sin espacios:")
+//______________________________Variables__________________________________//
+numeroCad = acadena(leer())
+numeroDec = anumero(numeroCad)
+
+//valores = ["abc", "aabbcc", "abbc", "aabcc"]
+
+//______________________________Funciones__________________________________//
+
+funcion algoritmo()
+    si  cadena.contiene(numeroCad, "abc") == verdadero
+        imprimir ("abc: si")
+    sino
+        imprimir ("abc: no")fin
+
+    si  cadena.contiene(numeroCad, "aabbcc") == verdadero
+        imprimir ("aabbcc: si")
+    sino
+        imprimir ("aabbcc: no")fin
+
+    si  cadena.contiene(numeroCad, "abbc") == verdadero
+        imprimir ("abbc : si")
+    sino
+        imprimir ("abbc: no")fin
+
+
+    si  cadena.contiene(numeroCad, "aabcc") == verdadero
+        imprimir ("aabcc : si")
+    sino
+        imprimir ("aabcc: no")fin
+
+fin
+
+
+
+//______________________________Algoritmo_________________________________//
+
+si cadena.es_alfa(numeroCad) == falso
+    limpiar()
+    imprimir(
+"Por favor, no ingrese símbolos o espacios.
+Reintente"
+)
+sino
+    limpiar()
+    imprimir ("texto: "..numeroCad)
+    imprimir ("A continuación verá si los valores predeterminados se encuentran en el texto digitado")
+    algoritmo()fin

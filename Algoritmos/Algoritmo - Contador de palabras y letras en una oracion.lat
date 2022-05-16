@@ -1,0 +1,23 @@
+imprimir ('Programa "Contar caractéres y palabras de una oracioón"')
+imprimir("Ingrese una oracion: ")
+
+//___________________________variables__________________________//
+x=leer()
+texto = acadena(x)
+contador=0
+
+//___________________________funciones___________________________//
+funcion algoritmo()
+    desde(i=0;i<cadena.longitud(texto);i++)
+        si (texto[i]==" ")
+            contador++ fin
+    fin
+
+    limpiar()
+    imprimir("Texto: "..texto)
+    imprimir("Palabras: "..contador +1)
+    imprimir ("Caractéres: "..cadena.longitud (texto))
+fin
+
+//___________________________algoritmo___________________________//
+algoritmo()

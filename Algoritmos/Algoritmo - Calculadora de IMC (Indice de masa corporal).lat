@@ -1,0 +1,7 @@
+//________________________Algoritmo______________________//
+escribir ("Bienvenido al programa de cálculo de IMC!") escribir("Por favor,escriba su peso expresado en kilogramos (Kg).")
+Kilogramos = leer()
+escribir ("¡Genial! Ahora escriba su altura expresada en Metros (Mts).") escribir(" Tenga en cuenta que se usa el sistema inglés. Así que por favor, use el punto para separar los metros de los centímetros")
+Altura = leer()
+Resultado = (Kilogramos) / (Altura^2)
+escribir ("¡Gracias por usar el programa! ") escribir ("Su índice de IMC es de "  .. Resultado)
